@@ -1,0 +1,41 @@
+<html>
+<head>
+
+ <script>
+
+function add() {
+var newListItem = document.createElement('h1');
+var x = document.getElementById('guest').value;
+var newText = document.createTextNode(x);
+newListItem.appendChild(newText);
+var position = document.getElementsByTagName('ul')[0];
+position.appendChild(newListItem);
+}
+
+function remove(){
+var removeGuest = document.getElementById('h1').value - 1;
+var checkOut = document.getElementById('room1');
+checkOut.removeChild(checkOut.childNodes[removeGuest]);
+  
+  
+}
+
+</script>
+</head>
+<body>
+  <button onclick="add()">Add a Guest</button>
+  <button onclick="remove()">Remove a Guest</button>
+  <div id = "Hotel">
+      <input type="text" id="guest">
+      <input type="number" id="h1">
+      
+  <ul id=room1>
+    
+    <h1>
+      
+    </h1>
+  </ul>
+  </div>
+</body>
+</html>
+
