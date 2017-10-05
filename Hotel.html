@@ -3,29 +3,44 @@
 
  <script>
 
-function add() {
-var newListItem = document.createElement('h1');
-var x = document.getElementById('guest').value;
-var newText = document.createTextNode(x);
-newListItem.appendChild(newText);
-var position = document.getElementsByTagName('ul')[0];
-position.appendChild(newListItem);
+function addRoom1() {
+var newListItem1 = document.createElement('h1');
+var x1 = document.getElementById('guest').value;
+var newText1 = document.createTextNode(x1);
+newListItem1.appendChild(newText1);
+var position1 = document.getElementsByTagName('ul')[0];
+position1.appendChild(newListItem1);
 }
 
-function remove(){
-var removeGuest = document.getElementById('h1').value - 1;
-var checkOut = document.getElementById('room1');
-checkOut.removeChild(checkOut.childNodes[removeGuest]);
+function removeRoom1(){
+var removeGuest1 = document.getElementById('h1').value - 1;
+var checkOut1 = document.getElementById('room1');
+checkOut1.removeChild(checkOut1.childNodes[removeGuest1]);
   
   
+}
+
+function addRoom2() {
+var newListItem2 = document.createElement('h1');
+var x2 = document.getElementById('guest').value;
+var newText2 = document.createTextNode(x2);
+newListItem2.appendChild(newText2);
+var position = document.getElementsByTagName('ul')[0];
+position.appendChild(newListItem2);
+}
+
+function removeRoom2(){
+var removeGuest2 = document.getElementById('h1').value - 1;
+var checkOut2 = document.getElementById('room2');
+checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
 }
 
 </script>
 </head>
 <body>
-  <button onclick="add()">Add a Guest</button>
-  <button onclick="remove()">Remove a Guest</button>
-  <div id = "Hotel">
+  <button onclick="addRoom1()">Add a Guest</button>
+  <button onclick="removeRoom1()">Remove a Guest</button>
+  <div id = "Hotel1">
       <input type="text" id="guest">
       <input type="number" id="h1">
       
@@ -36,6 +51,19 @@ checkOut.removeChild(checkOut.childNodes[removeGuest]);
     </h1>
   </ul>
   </div>
+  
+   <button onclick="addRoom2()">Add a Guest</button>
+  <button onclick="removeRoom2()">Remove a Guest</button>
+  <div id = "Hotel2">
+      <input type="text" id="guest">
+      <input type="number" id="h1">
+      
+  <ul id=room2>
+    
+    <h1>
+      
+    </h1>
+  </ul>
+  </div>
 </body>
 </html>
-
