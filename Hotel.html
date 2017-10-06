@@ -35,6 +35,39 @@ var checkOut2 = document.getElementById('room2');
 checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
 }
 
+
+
+function addRoom3() {
+var newListItem3 = document.createElement('h3');
+var ar3 = document.getElementById('guest3').value;
+var newText3 = document.createTextNode(ar3);
+newListItem3.appendChild(newText3);
+var position = document.getElementsByTagName('ul3')[0];
+position.appendChild(newListItem3);
+}
+
+function removeRoom3(){
+var removeGuest3 = document.getElementById('h3').value - 1;
+var checkOut3 = document.getElementById('room3');
+checkOut3.removeChild(checkOut3.childNodes[removeGuest3]);
+}
+
+
+function addRoom4() {
+var newListItem4 = document.createElement('h4');
+var ar4 = document.getElementById('guest4').value;
+var newText4 = document.createTextNode(ar4);
+newListItem4.appendChild(newText4);
+var position = document.getElementsByTagName('ul4')[0];
+position.appendChild(newListItem4);
+}
+
+function removeRoom4(){
+var removeGuest4 = document.getElementById('h4').value - 1;
+var checkOut4 = document.getElementById('room4');
+checkOut4.removeChild(checkOut2.childNodes[removeGuest4]);
+}
+
 </script>
 </head>
 <body>
@@ -66,5 +99,36 @@ checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
     </h2>
   </ul2>
   </div>
+  
+  
+       <button onclick="addRoom3()">Add a Guest</button>
+  <button onclick="removeRoom3()">Remove a Guest</button>
+  <div id = "Hotel3">
+      <input type="text" id="guest3">
+      <input type="number" id="h3">
+      
+  <ul3 id=room3>
+    
+    <h3>
+      
+    </h3>
+  </ul3>
+  </div>
+  
+  
+       <button onclick="addRoom4()">Add a Guest</button>
+  <button onclick="removeRoom4()">Remove a Guest</button>
+  <div id = "Hotel4">
+      <input type="text" id="guest4">
+      <input type="number" id="h4">
+      
+  <ul4 id=room4>
+    
+    <h4>
+      
+    </h4>
+  </ul4>
+  </div>
 </body>
 </html>
+
