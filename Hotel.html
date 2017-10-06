@@ -4,33 +4,33 @@
  <script>
 
 function addRoom1() {
-var newListItem1 = document.createElement('h1');
-var x1 = document.getElementById('guest').value;
-var newText1 = document.createTextNode(x1);
-newListItem1.appendChild(newText1);
-var position1 = document.getElementsByTagName('ul')[0];
-position1.appendChild(newListItem1);
+var newListItem = document.createElement('h1');
+var ar1 = document.getElementById('guest').value;
+var newText = document.createTextNode(ar1);
+newListItem.appendChild(newText);
+var position = document.getElementsByTagName('ul')[0];
+position.appendChild(newListItem);
 }
 
 function removeRoom1(){
-var removeGuest1 = document.getElementById('h1').value - 1;
-var checkOut1 = document.getElementById('room1');
-checkOut1.removeChild(checkOut1.childNodes[removeGuest1]);
+var removeGuest = document.getElementById('h1').value - 1;
+var checkOut = document.getElementById('room1');
+checkOut.removeChild(checkOut.childNodes[removeGuest]);
   
   
 }
 
 function addRoom2() {
-var newListItem2 = document.createElement('h1');
-var x2 = document.getElementById('guest').value;
-var newText2 = document.createTextNode(x2);
+var newListItem2 = document.createElement('h2');
+var ar2 = document.getElementById('guest2').value;
+var newText2 = document.createTextNode(ar2);
 newListItem2.appendChild(newText2);
-var position = document.getElementsByTagName('ul')[0];
+var position = document.getElementsByTagName('ul2')[0];
 position.appendChild(newListItem2);
 }
 
 function removeRoom2(){
-var removeGuest2 = document.getElementById('h1').value - 1;
+var removeGuest2 = document.getElementById('h2').value - 1;
 var checkOut2 = document.getElementById('room2');
 checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
 }
@@ -52,18 +52,19 @@ checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
   </ul>
   </div>
   
-   <button onclick="addRoom2()">Add a Guest</button>
+  
+       <button onclick="addRoom2()">Add a Guest</button>
   <button onclick="removeRoom2()">Remove a Guest</button>
   <div id = "Hotel2">
-      <input type="text" id="guest">
-      <input type="number" id="h1">
+      <input type="text" id="guest2">
+      <input type="number" id="h2">
       
-  <ul id=room2>
+  <ul2 id=room2>
     
-    <h1>
+    <h2>
       
-    </h1>
-  </ul>
+    </h2>
+  </ul2>
   </div>
 </body>
 </html>
