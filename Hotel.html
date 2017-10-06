@@ -2,7 +2,28 @@
 <head>
 
  <script>
+ var guestNumber = document.getElementById('')
+if(guestNumber <= 3 ){
+}
+function addRoom1() {
+var newListItem = document.createElement('h1');
+var ar1 = document.getElementById('guest').value;
+var newText = document.createTextNode(ar1);
+newListItem.appendChild(newText);
+var position = document.getElementsByTagName('ul')[0];
+position.appendChild(newListItem);
+}
 
+function removeRoom1(){
+var removeGuest = document.getElementById('h1').value - 1;
+var checkOut = document.getElementById('room1');
+checkOut.removeChild(checkOut.childNodes[removeGuest]);
+  
+  
+}
+
+} else { return;
+}
 function addRoom1() {
 var newListItem = document.createElement('h1');
 var ar1 = document.getElementById('guest').value;
@@ -131,4 +152,3 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
   </div>
 </body>
 </html>
-
