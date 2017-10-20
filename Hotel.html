@@ -18,7 +18,7 @@ var position = document.getElementsByTagName('ul')[0];
 position.appendChild(newListItem);
 }
 else {
-  document.style.visibility ="hidden";
+  document.getElementById("addRoom1()").style.visibility ="hidden";
 }
 }
 
@@ -28,30 +28,19 @@ var removeGuest = document.getElementById('h1').value - 1;
 var checkOut = document.getElementById('room1');
 checkOut.removeChild(checkOut.childNodes[removeGuest]);
 }
-function addRoom1() {
-var newListItem = document.createElement('h1');
-var ar1 = document.getElementById('guest').value;
-var newText = document.createTextNode(ar1);
-newListItem.appendChild(newText);
-var position = document.getElementsByTagName('ul')[0];
-position.appendChild(newListItem);
-}
-
-function removeRoom1(){
-var removeGuest = document.getElementById('h1').value - 1;
-var checkOut = document.getElementById('room1');
-checkOut.removeChild(checkOut.childNodes[removeGuest]);
-  
-  
-}
-
-function addRoom2() {
+ function addRoom2() {
+   gn2++;
+if(gn2 <= 3 ){
 var newListItem2 = document.createElement('h2');
 var ar2 = document.getElementById('guest2').value;
 var newText2 = document.createTextNode(ar2);
 newListItem2.appendChild(newText2);
 var position = document.getElementsByTagName('ul2')[0];
 position.appendChild(newListItem2);
+}
+else {
+  document.getElementById("addRoom2()").style.visibility ="hidden";
+}
 }
 
 function removeRoom2(){
@@ -61,8 +50,9 @@ checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
 }
 
 
-
-function addRoom3() {
+ function addRoom3() {
+   gn3++;
+if(gn3 <= 3 ){
 var newListItem3 = document.createElement('h3');
 var ar3 = document.getElementById('guest3').value;
 var newText3 = document.createTextNode(ar3);
@@ -70,6 +60,11 @@ newListItem3.appendChild(newText3);
 var position = document.getElementsByTagName('ul3')[0];
 position.appendChild(newListItem3);
 }
+else {
+  document.getElementById("addRoom3()").style.visibility ="hidden";
+}
+}
+
 
 function removeRoom3(){
 var removeGuest3 = document.getElementById('h3').value - 1;
@@ -77,14 +72,19 @@ var checkOut3 = document.getElementById('room3');
 checkOut3.removeChild(checkOut3.childNodes[removeGuest3]);
 }
 
-
-function addRoom4() {
+ function addRoom4() {
+   gn4++;
+if(gn4 <= 3 ){
 var newListItem4 = document.createElement('h4');
 var ar4 = document.getElementById('guest4').value;
 var newText4 = document.createTextNode(ar4);
 newListItem4.appendChild(newText4);
 var position = document.getElementsByTagName('ul4')[0];
 position.appendChild(newListItem4);
+}
+else {
+  document.getElementById("addRoom4()").style.visibility ="hidden";
+}
 }
 
 function removeRoom4(){
