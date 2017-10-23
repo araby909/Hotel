@@ -96,10 +96,11 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
 }
 
 </script>
-  <button onclick="addRoom1()">Add a Guest</button>
-  <button onclick="removeRoom1()">Remove a Guest</button>
   <div id = "Hotel1">
+      <button onclick="addRoom1()">Add a Guest</button>
+  <button onclick="removeRoom1()">Remove a Guest</button>
       <input type="text" id="guest">
+    
       <input type="number" id="h1">
   <ul id=room1>
     
@@ -110,10 +111,12 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
   </div>
   
   
-       <button onclick="addRoom2()">Add a Guest</button>
-  <button onclick="removeRoom2()">Remove a Guest</button>
+
   <div id = "Hotel2">
+           <button onclick="addRoom2()">Add a Guest</button>
+  <button onclick="removeRoom2()">Remove a Guest</button>
       <input type="text" id="guest2">
+      
       <input type="number" id="h2">
       
   <ul2 id=room2>
@@ -125,10 +128,11 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
   </div>
   
   
-       <button onclick="addRoom3()">Add a Guest</button>
-  <button onclick="removeRoom3()">Remove a Guest</button>
   <div id = "Hotel3">
+           <button onclick="addRoom3()">Add a Guest</button>
+  <button onclick="removeRoom3()">Remove a Guest</button>
       <input type="text" id="guest3">
+      
       <input type="number" id="h3">
       
   <ul3 id=room3>
@@ -140,10 +144,11 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
   </div>
   
   
-       <button onclick="addRoom4()">Add a Guest</button>
-  <button onclick="removeRoom4()">Remove a Guest</button>
   <div id = "Hotel4">
+           <button onclick="addRoom4()">Add a Guest</button>
+  <button onclick="removeRoom4()">Remove a Guest</button>
       <input type="text" id="guest4">
+      
       <input type="number" id="h4">
       
   <ul4 id=room4>
@@ -157,11 +162,43 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
 </html>
 
 
-
 //css
 body {  background-image: url('https://afiftysomethingme.files.wordpress.com/2014/03/run-down-hotel.jpg');
  color: white;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
- div {
- font-size: 12px;
+ #Hotel1 {
+ font-size: 15px;
+ width: 25%;
+ float: left;
+background-color: lightblue;
  }
+ 
+ #Hotel2 {
+   font-size: 15px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: left;
+background-color: yellow;
+
+ }
+ 
+ #Hotel3 {
+    font-size: 15px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: right;
+background-color: red;
+   
+ }
+ 
+ #Hotel4{
+    font-size: 15px;
+ width: 25%;
+ float: right;
+ background-color: green;
+}
+
