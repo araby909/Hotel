@@ -4,13 +4,14 @@
 </head>
 <body>
  <script>
-var gn1 = 0
-var gn2 = 0
-var gn3 = 0
-var gn4 = 0
+gn1 = 0
+gn2 = 0
+gn3 = 0
+gn4 = 0
+
 
  function addRoom1() {
-   gn1++;
+  gn1++;
 if(gn1 <= 3 ){
 var newListItem = document.createElement('h1');
 var ar1 = document.getElementById('guest').value;
@@ -19,17 +20,26 @@ newListItem.appendChild(newText);
 var position = document.getElementsByTagName('ul')[0];
 position.appendChild(newListItem);
 }
-else {
-  document.getElementById("addRoom1()").style.visibility ="hidden";
-}
-}
 
+else {
+  document.getElementById("addRoom1").style.visibility ="hidden";
+}
+}
 
 function removeRoom1(){
+gn1--;
+  if(gn1 <= 3){
 var removeGuest = document.getElementById('h1').value - 1;
 var checkOut = document.getElementById('room1');
 checkOut.removeChild(checkOut.childNodes[removeGuest]);
+document.getElementById("addRoom1").style.visibility ="visible";
 }
+else {
+  document.getElementById("addRoom1").style.visibility ="hidden";
+}
+}
+
+
  function addRoom2() {
    gn2++;
 if(gn2 <= 3 ){
@@ -51,7 +61,6 @@ var checkOut2 = document.getElementById('room2');
 checkOut2.removeChild(checkOut2.childNodes[removeGuest2]);
 }
 
-
  function addRoom3() {
    gn3++;
 if(gn3 <= 3 ){
@@ -67,12 +76,12 @@ else {
 }
 }
 
-
 function removeRoom3(){
 var removeGuest3 = document.getElementById('h3').value - 1;
 var checkOut3 = document.getElementById('room3');
 checkOut3.removeChild(checkOut3.childNodes[removeGuest3]);
 }
+
 
  function addRoom4() {
    gn4++;
@@ -97,8 +106,8 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
 
 </script>
   <div id = "Hotel1">
-      <button onclick="addRoom1()">Add a Guest</button>
-  <button onclick="removeRoom1()">Remove a Guest</button>
+      <button onclick="addRoom1()" id = "addRoom1">Add a Guest</button>
+  <button onclick="removeRoom1()" id = "removeRoom1">Remove a Guest</button>
       <input type="text" id="guest">
     
       <input type="number" id="h1">
@@ -162,7 +171,7 @@ checkOut4.removeChild(checkOut4.childNodes[removeGuest4]);
 </html>
 
 
-//css
+
 body {  background-image: url('https://afiftysomethingme.files.wordpress.com/2014/03/run-down-hotel.jpg');
  color: white;
  background-repeat: no-repeat;
@@ -201,4 +210,4 @@ background-color: red;
  float: right;
  background-color: green;
 }
-
+ 
