@@ -1,0 +1,40 @@
+body {  background-image: url('https://afiftysomethingme.files.wordpress.com/2014/03/run-down-hotel.jpg');
+ color: white;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+ #Hotel1 {
+ font-size: 15px;
+ width: 25%;
+ float: left;
+background-color: lightblue;
+ }
+ 
+ #Hotel2 {
+   font-size: 20px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: left;
+background-color: yellow;
+
+ }
+ 
+ #Hotel3 {
+    font-size: 25px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: right;
+background-color: green
+;
+   
+ }
+ 
+ #Hotel4{
+    font-size: 25px;
+ width: 25%;
+ float: right;
+ background-color: red;
+}
+ 
