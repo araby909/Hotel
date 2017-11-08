@@ -1,0 +1,329 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="hotel.css">
+</head>
+<body>
+ <script>
+var gn1 = 0
+var gn2 = 0
+var gn3 = 0
+var gn4 = 0
+
+
+ function addRoom1() {
+gn1++;
+if(gn1 <= 3 ){
+// if else statement works to make room stop at 3. Tried return didn't work, also tried display
+document.getElementById("addRoom1").style.visibility ="visible";
+//makes box appear
+var newListItem = document.createElement('h1');
+//creates new list
+var ar1 = document.getElementById('guest').value;
+//creates guest to add into room
+var newText = document.createTextNode(ar1);
+newListItem.appendChild(newText);
+//adds text of persons name and adds it to list
+var position = document.getElementsByTagName('ul')[0];
+position.appendChild(newListItem);
+//positions it on list.
+}
+
+else {
+  document.getElementById("addRoom1").style.visibility ="hidden";
+//makes button disappear after 3 guests are added to room.
+}
+window.alert(gn1)
+ //show how much in room.
+ }
+
+function removeRoom1() {
+// can't make remove start at 3. goes down to 0 and starts subtracting. making adding go over 3.
+// tried to do if else. confused on what to put in the if and in else.
+if(gn1 > 0){
+  //confused tried parseint tried clearinterval broke my code. also tried while loop broke code aswell.
+  //tried a return and tried to make function only work if variable was above 0 didn't work either
+  //this if else stops removing at 0 but function doesn't start until 1. so only 1 is removed.
+gn1--;
+//subtracts guest.
+document.getElementById("addRoom1").style.visibility ="visible";
+//makes button visibile again.
+//creates variable to show where to delete guests/
+var removeGuest = document.getElementById('h1').value;
+//told function where to delete didn't specify.
+var list=document.getElementById('room1').getElementsByTagName('h1')[removeGuest];
+//tells function what and where to delete.
+var ul=list.parentNode;
+ul.removeChild(list);
+// tells function list to delete from.
+//removes guests.
+}
+else {return}
+window.alert(gn1)
+//show much people deleted.
+}
+
+ function addRoom2() {
+gn2++;
+if(gn2 <= 3 ){
+// if else statement works to make room stop at 3. Tried return didn't work, also tried display
+document.getElementById("addRoom2").style.visibility ="visible";
+//makes box appear
+var newListItem2 = document.createElement('h2');
+//creates new list
+var ar2 = document.getElementById('guest2').value;
+//creates guest to add into room
+var newText2 = document.createTextNode(ar2);
+newListItem2.appendChild(newText2);
+//adds text of persons name and adds it to list
+var position = document.getElementsByTagName('ul2')[0];
+position.appendChild(newListItem2);
+//positions it on list.
+}
+
+else {
+  document.getElementById("addRoom2").style.visibility ="hidden";
+//makes button disappear after 3 guests are added to room.
+}
+window.alert(gn2)
+ //show how much in room.
+ }
+function removeRoom2() {
+// can't make remove start at 3. goes down to 0 and starts subtracting. making adding go over 3.
+// tried to do if else. confused on what to put in the if and in else.
+if(gn2 > 0){
+  //confused tried parseint tried clearinterval broke my code. also tried while loop broke code aswell.
+  //tried a return and tried to make function only work if variable was above 0 didn't work either
+  //this if else stops removing at 0 but function doesn't start until 1. so only 1 is removed.
+gn2--;
+//subtracts guest.
+document.getElementById("addRoom2").style.visibility ="visible";
+//makes button visibile again.
+//creates variable to show where to delete guests/
+var removeGuest2 = document.getElementById('h2').value;
+//told function where to delete didn't specify.
+var list2=document.getElementById('room2').getElementsByTagName('h2')[removeGuest2];
+//tells function what and where to delete.
+var ul2=list2.parentNode;
+ul2.removeChild(list2);
+// tells function list to delete from.
+//removes guests.
+}
+else {return}
+window.alert(gn2)
+//show much people deleted.
+}
+
+
+ function addRoom3() {
+gn3++;
+if(gn3 <= 3 ){
+// if else statement works to make room stop at 3. Tried return didn't work, also tried display
+document.getElementById("addRoom3").style.visibility ="visible";
+//makes box appear
+var newListItem3 = document.createElement('h3');
+//creates new list
+var ar3 = document.getElementById('guest3').value;
+//creates guest to add into room
+var newText3 = document.createTextNode(ar3);
+newListItem3.appendChild(newText3);
+//adds text of persons name and adds it to list
+var position = document.getElementsByTagName('ul3')[0];
+position.appendChild(newListItem3);
+//positions it on list.
+}
+
+else {
+  document.getElementById("addRoom3").style.visibility ="hidden";
+//makes button disappear after 3 guests are added to room.
+}
+window.alert(gn3)
+ //show how much in room.
+ }
+function removeRoom3() {
+// can't make remove start at 3. goes down to 0 and starts subtracting. making adding go over 3.
+// tried to do if else. confused on what to put in the if and in else.
+if(gn3 > 0){
+  //confused tried parseint tried clearinterval broke my code. also tried while loop broke code aswell.
+  //tried a return and tried to make function only work if variable was above 0 didn't work either
+  //this if else stops removing at 0 but function doesn't start until 1. so only 1 is removed.
+gn3--;
+//subtracts guest.
+document.getElementById("addRoom3").style.visibility ="visible";
+//makes button visibile again.
+//creates variable to show where to delete guests/
+var removeGuest3 = document.getElementById('h3').value;
+//told function where to delete didn't specify.
+var list3=document.getElementById('room3').getElementsByTagName('h3')[removeGuest3];
+//tells function what and where to delete.
+var ul3=list3.parentNode;
+ul3.removeChild(list3);
+// tells function list to delete from.
+//removes guests.
+}
+else {return}
+window.alert(gn3)
+//show much people deleted.
+}
+
+ function addRoom4() {
+gn4++;
+if(gn4 <= 3 ){
+// if else statement works to make room stop at 3. Tried return didn't work, also tried display
+document.getElementById("addRoom4").style.visibility ="visible";
+//makes box appear
+var newListItem4  = document.createElement('h4');
+//creates new list
+var ar4 = document.getElementById('guest4').value;
+//creates guest to add into room
+var newText4 = document.createTextNode(ar4);
+newListItem4.appendChild(newText4);
+//adds text of persons name and adds it to list
+var position = document.getElementsByTagName('ul4')[0];
+position.appendChild(newListItem4);
+//positions it on list.
+}
+
+else {
+  document.getElementById("addRoom4").style.visibility ="hidden";
+//makes button disappear after 3 guests are added to room.
+}
+window.alert(gn4)
+ //show how much in room.
+ }
+function removeRoom4() {
+// can't make remove start at 3. goes down to 0 and starts subtracting. making adding go over 3.
+// tried to do if else. confused on what to put in the if and in else.
+if(gn4 > 0){
+  //confused tried parseint tried clearinterval broke my code. also tried while loop broke code aswell.
+  //tried a return and tried to make function only work if variable was above 0 didn't work either
+  //this if else stops removing at 0 but function doesn't start until 1. so only 1 is removed.
+gn4--;
+//subtracts guest.
+document.getElementById("addRoom4").style.visibility ="visible";
+//makes button visibile again.
+//creates variable to show where to delete guests
+var removeGuest4 = document.getElementById('h4').value;
+//told function where to delete didn't specify.
+var list4=document.getElementById('room4').getElementsByTagName('h4')[removeGuest4];
+//tells function what and where to delete.
+var ul4=list4.parentNode;
+ul4.removeChild(list4);
+// tells function list to delete from.
+//removes guests.
+}
+else {return}
+window.alert(gn4)
+//show much people deleted.
+}
+
+
+</script>
+  <div id = "Hotel1">
+      <button onclick="addRoom1()" id = "addRoom1">Add a Guest</button>
+  <button onclick="removeRoom1()" id = "removeRoom1">Remove a Guest</button>
+      <input type="text" id="guest">
+    
+      <input type="number" id="h1">
+  <ul id="room1">
+    
+    <h1>
+      
+    </h1>
+  </ul>
+  </div>
+  
+  
+
+  <div id = "Hotel2">
+           <button onclick="addRoom2()" id = "addRoom2">Add a Guest</button>
+  <button onclick="removeRoom2()" id = "removeRoom2">Remove a Guest</button>
+      <input type="text" id="guest2">
+      
+      <input type="number" id="h2">
+      
+  <ul2 id="room2">
+    
+    <h2>
+      
+    </h2>
+  </ul2>
+  </div>
+  
+  
+  <div id = "Hotel3">
+           <button onclick="addRoom3()" id = "addRoom3">Add a Guest</button>
+  <button onclick="removeRoom3()" id = "removeRoom3">Remove a Guest</button>
+      <input type="text" id="guest3">
+      
+      <input type="number" id="h3">
+      
+  <ul3 id="room3">
+    
+    <h3>
+      
+    </h3>
+  </ul3>
+  </div>
+  
+  
+  <div id = "Hotel4">
+           <button onclick="addRoom4()" id = "addRoom4">Add a Guest</button>
+  <button onclick="removeRoom4()" id = "removeRoom4">Remove a Guest</button>
+      <input type="text" id="guest4">
+      
+      <input type="number" id="h4">
+      
+  <ul4 id="room4">
+    
+    <h4>
+      
+    </h4>
+  </ul4>
+  </div>
+</body>
+</html>
+
+
+//css
+
+
+body {  background-image: url('https://afiftysomethingme.files.wordpress.com/2014/03/run-down-hotel.jpg');
+ color: white;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+ #Hotel1 {
+ font-size: 15px;
+ width: 25%;
+ float: left;
+background-color: lightblue;
+ }
+ 
+ #Hotel2 {
+   font-size: 20px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: left;
+background-color: yellow;
+
+ }
+ 
+ #Hotel3 {
+    font-size: 25px;
+ width: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ float: right;
+background-color: green
+;
+   
+ }
+ 
+ #Hotel4{
+    font-size: 25px;
+ width: 25%;
+ float: right;
+ background-color: red;
+}
+ 
